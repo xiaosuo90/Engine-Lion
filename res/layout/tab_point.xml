@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/background_color_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View style="@style/horizontal_line_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/titlebar_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            style="@style/linear_item_style"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/dot_num_icon"
+                style="@style/linear_icon_style"
+                android:contentDescription="@string/des"
+                android:src="@drawable/dot_num_icon" />
+
+            <TextView
+                style="@style/linear_lefttv_style"
+                android:layout_toRightOf="@id/dot_num_icon"
+                android:text="@string/dot_num" />
+
+            <EditText
+                android:id="@+id/et_nodeid"
+                style="@style/edit_text1_style" >
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/linear_item_style"
+            android:layout_marginBottom="2dp" >
+
+            <ImageView
+                android:id="@+id/coordinate_icon"
+                style="@style/linear_icon_style"
+                android:contentDescription="@string/des"
+                android:src="@drawable/coordinate_icon" />
+
+            <TextView
+                style="@style/linear_lefttv_style"
+                android:layout_toRightOf="@id/coordinate_icon"
+                android:text="@string/coordinate" />
+
+            <LinearLayout
+                style="@style/wrap_content_layout"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/et_x_tabpoint"
+                    style="@style/edit_text2_style"
+                    android:hint="@string/x" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/et_y_tabpoint"
+                    style="@style/edit_text2_style"
+                    android:hint="@string/y" >
+                </EditText>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/linear_item_style"
+            android:layout_marginBottom="2dp" >
+
+            <ImageView
+                android:id="@+id/stress_icon"
+                style="@style/linear_icon_style"
+                android:contentDescription="@string/des"
+                android:src="@drawable/stress_icon" />
+
+            <TextView
+                style="@style/linear_lefttv_style"
+                android:layout_toRightOf="@id/stress_icon"
+                android:text="@string/stress" />
+
+            <LinearLayout
+                style="@style/wrap_content_layout"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/et_f_x"
+                    style="@style/edit_text2_style"
+                    android:layout_marginTop="2dp"
+                    android:hint="@string/x" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/et_f_y"
+                    style="@style/edit_text2_style"
+                    android:hint="@string/y" >
+                </EditText>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/linear_item_style" >
+
+            <ImageView
+                android:id="@+id/limit_icon"
+                style="@style/linear_icon_style"
+                android:contentDescription="@string/des"
+                android:src="@drawable/limit_icon" />
+
+            <TextView
+                style="@style/linear_lefttv_style"
+                android:layout_toRightOf="@id/limit_icon"
+                android:text="@string/limit" />
+
+            <LinearLayout
+                style="@style/wrap_content_layout"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/et_retrain_x"
+                    style="@style/edit_text2_style"
+                    android:layout_marginTop="2dp"
+                    android:hint="@string/x" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/et_retrain_y"
+                    style="@style/edit_text2_style"
+                    android:hint="@string/y" >
+                </EditText>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sure_btn_tabpoint"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-5dp"
+        android:background="@drawable/sure_btn"
+        android:text="@string/sure"
+        android:textColor="@color/white" />
+
+    
+
+</LinearLayout>

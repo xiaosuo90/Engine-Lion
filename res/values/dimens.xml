@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="titlebar_height">38dp</dimen>
+    <dimen name="title_text_size">20sp</dimen>
+    <dimen name="left_text_size">22sp</dimen>
+    <dimen name="menu_width">25dp</dimen>
+    <dimen name="menu_left">15dp</dimen>
+    <dimen name="horizontal_line_height">1dp</dimen>
+    <dimen name="icon_tv_size">18sp</dimen>
+    <!-- 不同的尺寸，需要和不同的机型相结合进行细节上的调试 -->
+
+</resources>
